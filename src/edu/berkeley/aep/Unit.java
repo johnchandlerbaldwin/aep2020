@@ -37,4 +37,9 @@ public enum Unit {
     public String toString() {
         return name;
     }
+
+    public static void main(String[] args){
+        int[][] n = new int[2][2];
+        n[2][0] = 1;
+    }
 }
