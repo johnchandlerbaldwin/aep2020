@@ -115,14 +115,14 @@ public class MinesweeperTest {
     }
 
     //10
-//    @Test
-//    public void ShouldNotBeAbleToSelectSpotAlreadyChosen(){
-//        // Should not throw error - message is sent to ask to check a different spot
-//        Minesweeper game = new Minesweeper(8);
-//        game.check_spot(5,5);
-//        game.check_spot(5,5);
-//
-//        assertTrue(game.game_output() == "Spot already chosen.  Try another spot");
-//    }
+    @Test
+    public void ShouldNotBeAbleToSelectSpotAlreadyChosen(){
+        // Should not throw error - message is sent to ask to check a different spot
+        Minesweeper game = new Minesweeper(8);
+        game.check_spot(5,5);
+        game.check_spot(5,5);
+
+        assertTrue(game.game_output() == "Spot already chosen.  Try another spot");
+    }
 
 }
