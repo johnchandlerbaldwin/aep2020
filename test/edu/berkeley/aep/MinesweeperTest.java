@@ -36,18 +36,18 @@ public class MinesweeperTest {
 
     }
 
-//    @Test
-//    public void setMineShouldExplodeWhenAccessed(){
-//        Minesweeper game = new Minesweeper(8);
-//
-//        game.set_mine(3,7);
-//        game.check_spot(3,7);
-//
-//        System.out.println(game.game_output());
-//
-//        assertTrue(game.game_output() == "Mine! You Lose");
-//    }
-//
+    @Test
+    public void setMineShouldExplodeWhenAccessed(){
+        Minesweeper game = new Minesweeper(8);
+
+        game.set_mine(3,7);
+        game.check_spot(3,7);
+
+        System.out.println(game.game_output());
+
+        assertTrue(game.game_output() == "Mine! You Lose");
+    }
+
 //    @Test
 //    public void checkSpotWithTwoAdjacentShouldRevealTwo(){
 //        Minesweeper game = new Minesweeper(8);
