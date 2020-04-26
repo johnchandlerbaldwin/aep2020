@@ -83,15 +83,15 @@ public class MinesweeperTest {
         assertEquals(game.check_board(5,5), "0");
     }
 
-//    //7
-//    @Test
-//    public void FlaggingTheMineShouldResultInVictory(){
-//        Minesweeper game = new Minesweeper(8);
-//        game.set_mine(0,0);
-//        game.flag_mine(0,0);
-//
-//        assertTrue(game.game_output() == "You Win!");
-//    }
+    //7
+    @Test
+    public void FlaggingTheMineShouldResultInVictory(){
+        Minesweeper game = new Minesweeper(8);
+        game.set_mine(0,0);
+        game.flag_mine(0,0);
+
+        assertTrue(game.game_output() == "You Win!");
+    }
 
     //8
 //    @Test
