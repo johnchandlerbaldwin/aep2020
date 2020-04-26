@@ -48,16 +48,16 @@ public class MinesweeperTest {
         assertTrue(game.game_output() == "Mine! You Lose");
     }
 
-//    @Test
-//    public void checkSpotWithTwoAdjacentShouldRevealTwo(){
-//        Minesweeper game = new Minesweeper(8);
-//        game.set_mine(1,1);
-//        game.set_mine(1,2);
-//        game.check_spot(2,2);
-//
-//        assertEquals(game.check_board(2,2), "2");
-//    }
-//
+    @Test
+    public void checkSpotWithTwoAdjacentShouldRevealTwo(){
+        Minesweeper game = new Minesweeper(8);
+        game.set_mine(1,1);
+        game.set_mine(1,2);
+        game.check_spot(2,2);
+
+        assertEquals(game.check_board(2,2), "2");
+    }
+
 //    @Test
 //    public void checkSpotInCornerWithOneMineShouldReturnOne(){
 //        Minesweeper game = new Minesweeper(8);
