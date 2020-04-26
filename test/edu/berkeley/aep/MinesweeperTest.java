@@ -105,15 +105,15 @@ public class MinesweeperTest {
     }
 
     //9
-//    @Test
-//    public void ShouldNotBeAbleToSelectSpotOutsideOfBounds(){
-//        // Should not throw error - message is sent to ask to check a different spot
-//        Minesweeper game = new Minesweeper(8);
-//        game.check_spot(9,9);
-//
-//        assertTrue(game.game_output() == "Out of Bounds.  Try another spot");
-//    }
-//
+    @Test
+    public void ShouldNotBeAbleToSelectSpotOutsideOfBounds(){
+        // Should not throw error - message is sent to ask to check a different spot
+        Minesweeper game = new Minesweeper(8);
+        game.check_spot(9,9);
+
+        assertTrue(game.game_output() == "Out of Bounds.  Try another spot");
+    }
+
     //10
 //    @Test
 //    public void ShouldNotBeAbleToSelectSpotAlreadyChosen(){
