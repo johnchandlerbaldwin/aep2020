@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 
 public class MinesweeperTest {
 
+    //1
     @Test
     public void initializeMineSpotsShouldReturnAllocationBetweenZeroAndRowNumber(){
         Minesweeper game = new Minesweeper(8);
@@ -16,6 +17,7 @@ public class MinesweeperTest {
 
     }
 
+    //2
     @Test
     public void initializeMineSpotsShouldReturnUnequalAllocations(){
         Minesweeper game = new Minesweeper(8);
@@ -36,6 +38,7 @@ public class MinesweeperTest {
 
     }
 
+    //3
     @Test
     public void setMineShouldExplodeWhenAccessed(){
         Minesweeper game = new Minesweeper(8);
@@ -48,6 +51,7 @@ public class MinesweeperTest {
         assertTrue(game.game_output() == "Mine! You Lose");
     }
 
+    //4
     @Test
     public void checkSpotWithTwoAdjacentShouldRevealTwo(){
         Minesweeper game = new Minesweeper(8);
@@ -58,6 +62,7 @@ public class MinesweeperTest {
         assertEquals(game.check_board(2,2), "2");
     }
 
+    //5
     @Test
     public void checkSpotInCornerWithOneMineShouldReturnOne(){
         Minesweeper game = new Minesweeper(8);
@@ -67,16 +72,18 @@ public class MinesweeperTest {
         assertEquals(game.check_board(0,0), "1");
     }
 
-//    @Test
-//    public void checkSpotInAreaWithNoAdjacentMinesShouldReturnZero(){
-//        Minesweeper game = new Minesweeper(8);
-//        game.set_mine(1,1);
-//        game.check_spot(5,5);
-//        //System.out.println("final value: " + game.check_spot(5,5));
-//
-//        assertEquals(game.check_board(5,5), "0");
-//    }
-//
+    //6
+    @Test
+    public void checkSpotInAreaWithNoAdjacentMinesShouldReturnZero(){
+        Minesweeper game = new Minesweeper(8);
+        game.set_mine(1,1);
+        game.check_spot(5,5);
+        //System.out.println("final value: " + game.check_spot(5,5));
+
+        assertEquals(game.check_board(5,5), "0");
+    }
+
+//    //7
 //    @Test
 //    public void FlaggingTheMineShouldResultInVictory(){
 //        Minesweeper game = new Minesweeper(8);
@@ -85,7 +92,8 @@ public class MinesweeperTest {
 //
 //        assertTrue(game.game_output() == "You Win!");
 //    }
-//
+
+    //8
 //    @Test
 //    public void FlaggingWrongMinesInAdditionToCorrectOnesShouldNotResultInVictory(){
 //        Minesweeper game = new Minesweeper(8);
@@ -96,6 +104,7 @@ public class MinesweeperTest {
 //        assertTrue(game.game_output() != "You Win!");
 //    }
 //
+    //9
 //    @Test
 //    public void ShouldNotBeAbleToSelectSpotOutsideOfBounds(){
 //        // Should not throw error - message is sent to ask to check a different spot
@@ -105,6 +114,7 @@ public class MinesweeperTest {
 //        assertTrue(game.game_output() == "Out of Bounds.  Try another spot");
 //    }
 //
+    //10
 //    @Test
 //    public void ShouldNotBeAbleToSelectSpotAlreadyChosen(){
 //        // Should not throw error - message is sent to ask to check a different spot
