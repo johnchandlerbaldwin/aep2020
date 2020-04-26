@@ -58,15 +58,15 @@ public class MinesweeperTest {
         assertEquals(game.check_board(2,2), "2");
     }
 
-//    @Test
-//    public void checkSpotInCornerWithOneMineShouldReturnOne(){
-//        Minesweeper game = new Minesweeper(8);
-//        game.set_mine(1,1);
-//        game.check_spot(0,0);
-//
-//        assertEquals(game.check_board(0,0), "1");
-//    }
-//
+    @Test
+    public void checkSpotInCornerWithOneMineShouldReturnOne(){
+        Minesweeper game = new Minesweeper(8);
+        game.set_mine(1,1);
+        game.check_spot(0,0);
+
+        assertEquals(game.check_board(0,0), "1");
+    }
+
 //    @Test
 //    public void checkSpotInAreaWithNoAdjacentMinesShouldReturnZero(){
 //        Minesweeper game = new Minesweeper(8);
