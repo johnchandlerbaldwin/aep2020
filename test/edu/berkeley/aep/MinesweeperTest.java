@@ -16,26 +16,26 @@ public class MinesweeperTest {
 
     }
 
-//    @Test
-//    public void initializeMineSpotsShouldReturnUnequalAllocations(){
-//        Minesweeper game = new Minesweeper(8);
-//
-//        int[][] random_mines = game.initialize_mine_spots(2,3);
-//
-//        //Create string to test that x and y coordinates are jointly different
-//        String[] s = new String[3];
-//
-//        s[0] = String.valueOf(random_mines[0][0]) + String.valueOf(random_mines[0][1]);
-//        s[1] = String.valueOf(random_mines[1][0]) + String.valueOf(random_mines[1][1]);
-//        s[2] = String.valueOf(random_mines[2][0]) + String.valueOf(random_mines[2][1]);
-//
-//        //Assert that the 3 mines are in different locations
-//        assertTrue(s[0] != s[1]);
-//        assertTrue(s[1] != s[2]);
-//        assertTrue(s[2] != s[0]);
-//
-//    }
-//
+    @Test
+    public void initializeMineSpotsShouldReturnUnequalAllocations(){
+        Minesweeper game = new Minesweeper(8);
+
+        int[][] random_mines = game.initialize_mine_spots(2,3);
+
+        //Create string to test that x and y coordinates are jointly different
+        String[] s = new String[3];
+
+        s[0] = String.valueOf(random_mines[0][0]) + String.valueOf(random_mines[0][1]);
+        s[1] = String.valueOf(random_mines[1][0]) + String.valueOf(random_mines[1][1]);
+        s[2] = String.valueOf(random_mines[2][0]) + String.valueOf(random_mines[2][1]);
+
+        //Assert that the 3 mines are in different locations
+        assertTrue(s[0] != s[1]);
+        assertTrue(s[1] != s[2]);
+        assertTrue(s[2] != s[0]);
+
+    }
+
 //    @Test
 //    public void setMineShouldExplodeWhenAccessed(){
 //        Minesweeper game = new Minesweeper(8);
