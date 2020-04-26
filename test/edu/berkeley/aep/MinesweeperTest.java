@@ -94,16 +94,16 @@ public class MinesweeperTest {
     }
 
     //8
-//    @Test
-//    public void FlaggingWrongMinesInAdditionToCorrectOnesShouldNotResultInVictory(){
-//        Minesweeper game = new Minesweeper(8);
-//        game.set_mine(0,0);
-//        game.flag_mine(1,0);
-//        game.flag_mine(0,0);
-//
-//        assertTrue(game.game_output() != "You Win!");
-//    }
-//
+    @Test
+    public void FlaggingWrongMinesInAdditionToCorrectOnesShouldNotResultInVictory(){
+        Minesweeper game = new Minesweeper(8);
+        game.set_mine(0,0);
+        game.flag_mine(1,0);
+        game.flag_mine(0,0);
+
+        assertTrue(game.game_output() != "You Win!");
+    }
+
     //9
 //    @Test
 //    public void ShouldNotBeAbleToSelectSpotOutsideOfBounds(){
